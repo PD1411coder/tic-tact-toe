@@ -1,0 +1,40 @@
+/* src/components/Board.css */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+  }
+  
+  .square:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .winner {
+    background-color: #8cff66;
+    border: 2px solid green;
+  }
+  
+  .message{
+    display: flex;
+    justify-content: center;
+  }
+
+  .reset{
+    margin-top: 35px;
+    height: fit-content;
+    width: fit-content;
+  }
